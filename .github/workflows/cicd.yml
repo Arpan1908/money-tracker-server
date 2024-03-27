@@ -24,4 +24,4 @@ jobs:
        - name: Pull Docker Image 
          run: docker pull pikai/node-server-money-tracker:latest
        - name: Run Container
-         run: docker run -d -p 8080:8080 --name server_container -e MONGO_URL='${{ secrets.MONGO_URL }}' pikai/node-server-money-tracker
+         run: docker run -d -p 8080:8080 --rm --name server_container -e MONGO_URL='${{ secrets.MONGO_URL }}' pikai/node-server-money-tracker
