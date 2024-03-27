@@ -61,6 +61,10 @@ app.get('/api/info', async (req, res) => {
   }
 });
 
+app.get('/,(req,res)=>{
+        res.send("Hello world");
+})
+
 app.post('/api/transaction', async (req, res) => {
   try {
     const { item, description, time, price } = req.body;
